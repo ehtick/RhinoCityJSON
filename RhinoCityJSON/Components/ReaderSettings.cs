@@ -98,8 +98,7 @@ namespace RhinoCityJSON.Components
                     }
                     else
                     {
-                        AddRuntimeMessage(GH_RuntimeMessageLevel.Error, ErrorCollection.errorCollection[errorCodes.invalidLod]);
-                        return;
+                        AddRuntimeMessage(GH_RuntimeMessageLevel.Warning, ErrorCollection.errorCollection[errorCodes.invalidLod]);
                     }
                 }
 

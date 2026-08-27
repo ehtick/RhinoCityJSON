@@ -51,7 +51,7 @@ namespace RhinoCityJSON
             {errorCodes.surfaceCreation, "Not all surfaces have been correctly created"},
             {errorCodes.emptyPath, "Path is empty"},
             {errorCodes.invalidPath, "No valid filepath found"},
-            {errorCodes.invalidLod, "Invalid lod input found"},
+            {errorCodes.invalidLod, "Non-standard lod input found"},
             {errorCodes.noLod, "No lod data is supplied"},
             {errorCodes.noBType, "No Object type data is supplied"},
             {errorCodes.noScale, "Rhino document scale is not supported, defaulted to unit 1"},
