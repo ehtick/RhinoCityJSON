@@ -139,9 +139,6 @@ namespace RhinoCityJSON.Components
 
                             if (!lodLevels.Contains(currentLoD))
                             {
-                                Rhino.RhinoApp.WriteLine(currentLoD);
-                                Rhino.RhinoApp.WriteLine(" ");
-
                                 lodLevels.Add(currentLoD);
                             }
 
