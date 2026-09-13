@@ -252,6 +252,7 @@ namespace RhinoCityJSON
                 if (JBoundaryList.Count == 0)
                 {
                     return ringCollection;
+                    //TODO: add warning
                 }
 
                 if (JBoundaryList[0][0].Type == Newtonsoft.Json.Linq.JTokenType.Integer)

@@ -184,14 +184,14 @@ namespace RhinoCityJSON.Components
                 var geoExtendObject = metaData.geographicalExtent;
 
                 Rhino.Geometry.Box domain = new Rhino.Geometry.Box();
-                if (!translate)
+                if (translate)
                 {
                     if (isFirst)
                     { // compute the translation of every object
                         isFirst = false;
-                        lllExtend.X = -(double)translationtransObject[0];
-                        lllExtend.Y = -(double)translationtransObject[1];
-                        lllExtend.Z = -(double)translationtransObject[2];
+                        lllExtend.X = (double)translationtransObject[0];
+                        lllExtend.Y = (double)translationtransObject[1];
+                        lllExtend.Z = (double)translationtransObject[2];
                     }
 
                     Rhino.Geometry.BoundingBox bbox = new Rhino.Geometry.BoundingBox(
